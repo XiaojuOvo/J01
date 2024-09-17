@@ -12,11 +12,7 @@ public class Monster extends Creature {
         magic = mp;
     }
 
-    @Override
-    public void attack(Creature c, int ap) {
-        System.out.println(this.name + " attack " + c + " of " + ap + "points");
-        c.receiveAttack(ap * magic);
-    }
+    
 
     public void rolleyes() {
         System.out.println(this.name + " roll my eyes. ");
@@ -25,5 +21,12 @@ public class Monster extends Creature {
     public void bePissed() {
         System.out.println(this.name + " is so freakin pissed. ");
     }
+
+    public void fly(Being being) {
+
+        System.out.println(this.name + " flew to " + being.name );
+
+    } 
+   
 
 }

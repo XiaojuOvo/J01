@@ -16,7 +16,7 @@ public class Creature extends Being {
     }
 
     public void speakTo(Creature creature, String something) {
-        System.out.println(this.name + " told " + creature + "'" + something + "'");
+        System.out.println(this.name + " told " + creature.name + "'" + something + "'");
         creature.listen(something);
     }
 
@@ -25,18 +25,17 @@ public class Creature extends Being {
         memory[memoryOffset % memory.length] = something;
     }
 
-    public void attack(Creature creature, int ap) {
-        System.out.println(this.name + " attacked " + creature + " of " + ap + "points");
-        creature.receiveAttack(ap);
+    public void thrown(Creature creature) {
+        System.out.println(this.name + " throwed " + creature.name );
+        
+    }
+    public void pick(Creature creature) {
+        System.out.println(this.name + " picked " + creature.name );
+        
     }
 
-    public void receiveAttack(int ap) {
-        if (!isDead()) {
-            if (defense < ap) {
-                health -= ap;
-                System.out.println(this.name + " got " + ap + "points attack");
-            }
-        }
+    public void eat(Creature creature) {
+        System.out.println(this.name + " ate " + creature.name );
     }
 
     public boolean isDead() {
@@ -49,9 +48,15 @@ public class Creature extends Being {
         return false;
     }
 
-    public void move() {
+    public void move(Being being) {
 
-        // not implemented yet
+        System.out.println(this.name + " moved to " + being.name );
+
+    }
+
+    public void drool() {
+
+        System.out.println(this.name + "drolled" );
 
     }
 
