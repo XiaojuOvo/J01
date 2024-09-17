@@ -1,4 +1,4 @@
-@startuml
+@startuml 1
 
 class Being
 
@@ -11,20 +11,18 @@ class Creature {
 
     speakTo()
     listen()
-    attack()
+    thrown()
+    pick()
+    eat()
+    drool()
     move()
 }
 
-class SpiderWeb{
-    status
-    open()
-    close()
-}
+
 
 class Monster{
     int magic
-    rolleyes()
-    bePissed()
+    fly()
 }
 
 Creature --|> Being
@@ -34,6 +32,10 @@ Human --|> Creature
 
 Monster --|> Creature
 
-SpiderWeb --|> Being
+Gourd --|> Creature
+
+GourdHuman --|> Creature
+
+
 
 @enduml

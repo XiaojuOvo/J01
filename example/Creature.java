@@ -38,15 +38,7 @@ public class Creature extends Being {
         System.out.println(this.name + " ate " + creature.name );
     }
 
-    public boolean isDead() {
-
-        if (health <= 0) {
-            System.out.println(this.name + " is dead");
-            return true;
-        }
-
-        return false;
-    }
+    
 
     public void move(Being being) {
 

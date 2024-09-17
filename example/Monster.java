@@ -14,13 +14,6 @@ public class Monster extends Creature {
 
     
 
-    public void rolleyes() {
-        System.out.println(this.name + " roll my eyes. ");
-    }
-
-    public void bePissed() {
-        System.out.println(this.name + " is so freakin pissed. ");
-    }
 
     public void fly(Being being) {
 
