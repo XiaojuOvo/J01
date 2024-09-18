@@ -4,12 +4,12 @@
 
 类型设计（建模）如下：
 
-![](https://github.com/XiaojuOvo/J01/blob/main/example/uml/characters.pu)
+![](https://github.com/jwork-2024/j01-XiaojuOvo/blob/main/example/uml/characters.pu)
 
 
 桥段场景如下：
 
-![](https://github.com/XiaojuOvo/J01/blob/main/example/uml/timeline.pu)
+![](https://github.com/jwork-2024/j01-XiaojuOvo/blob/main/example/uml/timeline.pu)
 
 得到运行结果：
 
