@@ -5,7 +5,7 @@ public class Scene {
     Being inside_of_the_door;
     Being outside_of_the_door;
     Creature grape1,grape2; 
-    Human oldman;
+    
     Monster bat1;
     Monster bat2;
     GourdHuman erwa;
@@ -16,7 +16,7 @@ public class Scene {
     public Scene() {
         inside_of_the_door = new Being("inside of the door");
         outside_of_the_door = new Being("outside of the door");
-        oldman = new Human("老爷爷");
+        
         bat1 = new Monster("蝙蝠小妖1", 50, 10, 20, 2);
         bat2 = new Monster("蝙蝠小妖2", 50, 10, 20, 2);
         erwa=new GourdHuman("二娃");
@@ -42,6 +42,7 @@ public class Scene {
         erwa.thrown(grape2);
         bat1.pick(grape2);
         erwa.move(inside_of_the_door);
+        bat1.eat(grape1);
         bat1.eat(grape2);
         bat2.drool();
         
