@@ -6,7 +6,7 @@ public class Human extends Creature {
         super(name);
         health = 100;
         attack = 20;
-        defense = 1;
+        defense =  1;
     }
 
 }

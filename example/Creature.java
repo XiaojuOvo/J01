@@ -21,7 +21,7 @@ public class Creature extends Being {
     }
 
     public void listen(String something) {
-        System.out.println(this.name + " heard: " + something);
+        System.out.println(this.name + " heard: " +  something);
         memory[memoryOffset % memory.length] = something;
     }
 

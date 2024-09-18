@@ -44,7 +44,7 @@ public class Scene {
         erwa.move(inside_of_the_door);
         bat1.eat(grape1);
         bat1.eat(grape2);
-        bat2.drool();
+        bat2.drool(); 
         
         
 

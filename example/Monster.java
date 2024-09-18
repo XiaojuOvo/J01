@@ -9,7 +9,7 @@ public class Monster extends Creature {
         health = hp;
         attack = ap;
         defense = dp;
-        magic = mp;
+        magic =  mp;
     }
 
     

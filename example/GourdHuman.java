@@ -6,7 +6,7 @@ public class GourdHuman extends Creature {
         super(name);
         health = 200;
         attack = 40;
-        defense = 5;
+        defense =  5;
     }
 
 }
